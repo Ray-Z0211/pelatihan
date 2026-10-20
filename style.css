@@ -1,23 +1,32 @@
+/* Mengatur latar belakang seluruh halaman dan jenis font */
 body {
   background-color: #F0F8FF;
   font-family: Arial, sans-serif;
   color: #000000;
 }
 
-kartu-profil {
+/* 
+  PERBAIKAN: 
+  1. Menambahkan tanda titik (.) sebelum kartu-profil karena di HTML memakai class="kartu-profil"
+  2. Memperbaiki "backgroung-color" menjadi "background-color"
+  3. Menggabungkan text-align: center ke dalam blok ini agar rapi
+*/
+.kartu-profil {
   width: 300px;
   margin: 50px auto;
   padding: 20px;
-  backgroung-color: white;
+  background-color: white; /* Perbaikan typo: background-color */
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center; /* Mengatur semua teks & tombol di dalam kartu agar berada di tengah */
 }
 
-
-kartu-profil img {
-  widht: 150px;
-  border-radius: 50%;
-}
-kartu-profil {
-  text-align: center;
+/* 
+  PERBAIKAN: 
+  1. Menambahkan tanda titik (.) pada selector .kartu-profil img
+  2. Memperbaiki typo "widht" menjadi "width"
+*/
+.kartu-profil img {
+  width: 150px; /* Perbaikan typo: width */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
 }
